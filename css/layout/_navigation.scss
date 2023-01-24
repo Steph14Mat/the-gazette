@@ -5,6 +5,9 @@ a{
     letter-spacing: 1px;
     margin-right: 15px;
     font-weight: 500;
+    &:hover{
+        color: $red;
+    }
 }
 
 nav{
