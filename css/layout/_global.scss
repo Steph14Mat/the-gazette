@@ -1,0 +1,36 @@
+body{
+    border-top: $grey-light 1px solid;
+}
+
+hr{
+    border-top: $grey-light 1px solid;
+}
+
+.wrapper{
+    width: 920px;
+    margin: auto;
+}
+
+.light-grey-bg{
+    background-color: $grey-light;
+}
+
+.dark-grey-bg{
+    background-color: $grey-dark;
+}
+
+.tag{
+    background-color: $red;
+    width: fit-content;
+    padding: 6px;
+    a{
+        color: white;
+        font-size: 11px;
+        margin: 0;
+    }
+}
+
+.social-icons a{
+    margin: 0 20px;
+    color: $grey;
+}
