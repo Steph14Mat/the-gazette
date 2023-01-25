@@ -11,18 +11,12 @@ hr{
     margin: auto;
 }
 
-.light-grey-bg{
-    background-color: $grey-light;
-}
-
-.dark-grey-bg{
-    background-color: $grey-dark;
-}
-
 .tag{
     background-color: $red;
     width: fit-content;
     padding: 6px;
+    text-transform: uppercase;
+    color: white;
     a{
         color: white;
         font-size: 11px;
@@ -37,4 +31,11 @@ hr{
 
 .margin-nul{
     margin-top: 0 !important;
+}
+
+.bouton{
+    font-weight: 400;
+    font-size: 15px;
+    border: 1px solid;
+    padding: 15px 20px;
 }

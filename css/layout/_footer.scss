@@ -1,5 +1,37 @@
-footer .menu{
+footer{
+    background: url(/img/blog/9.jpg) center/cover no-repeat;
+    position: relative;
+    z-index: -1;
+    .menu{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 4rem;
+    padding: 80px 0;
+    h4{
+        font-size: 22px;
+        ul a{
+            font-size: 13px;
+            text-transform: none;
+            line-height: 25px;
+            color: gray;
+        }
+    }
+    }
+    &::before {
+        @include overlay;
+        background-color: rgba(0, 0, 0, 0.527);
+    }
+    & * {
+        color: white;
+        z-index: 15;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+}
+
+small{
+    z-index: 15;
+    margin: 0 auto;
 }

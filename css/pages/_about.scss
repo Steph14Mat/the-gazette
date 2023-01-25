@@ -1,0 +1,99 @@
+#about{
+    h2{
+        color: black;
+        margin-top: 0;
+        font-size: 30px;
+    }
+    .date{
+        font-style: italic;
+    }
+    .light-grey-bg{
+        padding: 0;
+        height: 140px;
+        display: flex;
+    }
+}
+
+.about-us{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.history div{
+    column-count: 2;
+    p{
+        line-height: 30px;
+        color: gray;
+        margin: 0;
+    }
+}
+
+.history {
+    padding: 40px 0;
+}
+
+.our-team{
+    img{
+        width: 100%;
+    }
+    h2{
+        margin-bottom: 50px;
+    }
+    .our-team-grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        margin-bottom: 40px;
+    }
+    &__name{
+        margin: 25px 0 0 0 !important;
+    }
+    &__fonction{
+        align-items: center;
+        display: flex !important;
+        justify-content: space-between;
+        p{
+            font-style: italic;
+        }
+    }
+    .social-about{
+        display: flex !important;
+    a{
+        color: rgb(196, 195, 195);
+        margin: 0 0 0 15px;
+    }
+}
+}
+
+.join-us{
+    display: flex;
+    height: 380px;
+    background: url(/img/blog/cta.jpg) center fixed no-repeat;
+    position: relative;
+    z-index: -1;
+    &::before{
+        @include overlay;
+        background-color: rgba(0, 0, 0, 0.527);
+    }
+}
+
+.join-our-team{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 20;
+    .bouton{
+        width: fit-content;
+        border: 2px solid ;
+    }
+    & * {
+        color: white !important;
+    }
+    p{
+        line-height: 30px;
+        text-align: center;
+        color: rgb(184, 182, 182) !important;
+    }
+}
